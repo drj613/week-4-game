@@ -92,7 +92,7 @@ $(document).ready(function() {
 	function win(){
 		wins++;
 		alert("You won this round!");
-		$("winCount").(wins);
+		$("winCount").text(wins);
 			if(wins===5){
 				alert("You have won the game!");
 				reset();
