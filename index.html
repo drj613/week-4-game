@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crystal Collecter</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+	</head>
+
+	<body background="assets/images/background_img.jpg">
+		<!-- Container for content -->
+		<div class="container">
+			<!-- Title -->
+			<div class="row">
+				<h1 style="text-align: center;">Crystal Collector!</h1>
+			</div>
+			
+			<br>
+
+			<!-- Instructions -->
+			<div class="row" style="text-align: center;">
+				<div class="col-lg-4">
+					<p>A random number between 19 and 120 will be displayed at the start of the game.</p>
+				</div>
+				
+				<div class="col-lg-4">
+					<p>There are four crystals below. By clicking on a crystal you will modify your score. The properties of the crystals will be hidden from you until you click them and see for yourself what they can do.</p>
+				</div>
+
+				<div class="col-lg-4">
+					<p>Each time the game starts, the properties of each crystal will change.</p>
+					<p>If you reach the target score 5 times, you win! If you go over 5 times, you lose.</p>
+				</div>
+			</div>
+			
+			<h1 style="text-align: center;"><abbr title="Good luck; have fun">GL;HF!</abbr></h1>
+			
+			<div class="row">
+			<!-- Crystal Score -->
+				<div class="col-lg-6">
+					<div class="panel panel-default" style="text-align: center;">
+						<div class ="panel-heading"><b>Target Crystal Power Score:</b></div>
+						<div class="panel-body" id="targScore"></div>
+					</div>
+				</div>
+			
+			<!-- Wins/Losses -->
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-lg-6" style="text-align: center;">
+							<div class="panel panel-default">
+							<div class="panel-heading"><b>Wins</b></div>
+							<div class="panel-body" id="winCount">0</div>
+						</div>
+					</div>
+					<div class="col-lg-6" style="text-align: center;">
+						<div class="panel panel-default">
+							<div class="panel-heading"><b>Losses</b></div>
+							<div class="panel-body" id="loseCount">0</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ZE GEMZ OF POWAAAAAA!!!1! -->
+			<div class="row">
+				<div>
+					<div class="col-lg-3">
+						<img src="assets/images/amethyst.jpg" class="img-thumbnail crystalImg" id="amethyst" alt="Amethyst">
+					</div>
+					<div class="col-lg-3">
+						<img src="assets/images/ruby.jpg" class="img-thumbnail crystalImg" id="ruby" alt="Ruby">
+					</div>
+					<div class="col-lg-3">
+						<img src="assets/images/smokyQuartz.jpg" class="img-thumbnail crystalImg" id="quartz" alt="Smoky Quartz">
+					</div>
+					<div class="col-lg-3">
+						<img src="assets/images/bismuth.jpg" class="img-thumbnail crystalImg" id="bismuth" alt="Bismuth">
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- Total Score -->
+			<div class="col-lg-12">
+				<div class="panel panel-default" style="text-align: center;">
+					<div class="panel-heading"><b>Current Score:</b></div>
+					<div class="panel-body"><p id="currScore"></p></div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
